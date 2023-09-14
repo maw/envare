@@ -33,7 +33,7 @@ psql -P expanded=auto -P null=NULL -U db_server -h db_server db_name "$@"
 It saves me some typing, but it's still far from ideal.  And in an unwary
 moment I might commit it!
 
-Now, though, I can make it a good deal shorter:
+With `envare`, though, I can make it generic and less hacky.
 
 ```shell
 #!/bin/bash
