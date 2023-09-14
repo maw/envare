@@ -40,7 +40,11 @@ Now, though, I can make it a good deal shorter:
 
 export PGPASSWORD="$(envare DB_PASSWORD)"
 
-psql -P expanded=auto -P null=NULL -U "$(envare DB_USER) -h "$(envare DB_SERVER)" "$(envare DB_DATABASE) "$@"
+psql -P expanded=auto -P null=NULL \
+    -U "$(envare DB_USER) \
+    -h "$(envare DB_SERVER)" \
+    "$(envare DB_DATABASE) \
+    "$@"
 ```
 
 If launching all those subshells bothers you, first: it shouldn't; and second:
