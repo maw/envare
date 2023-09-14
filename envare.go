@@ -24,7 +24,6 @@ func main() {
 			fmt.Printf("%s=%s\n", k, shellescape.Quote(env[k]))
 		}
 	} else {
-
 		for k, v := range env {
 			fmt.Printf("%s=%s\n", k, shellescape.Quote(v))
 		}

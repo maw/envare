@@ -1,4 +1,4 @@
-module github.com/maw/envreader
+module github.com/maw/envare
 
 go 1.20
 
