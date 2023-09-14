@@ -19,7 +19,10 @@ func main() {
 
 	args := flag.Args()
 
-	if len(args) > 0 {
+	if len(args) == 1 {
+		fmt.Printf("%s", shellescape.Quote(arg))
+		fmt.Printf("%s", arg)
+	} else if len(args) > 1 {
 		for _, k := range args {
 			fmt.Printf("%s=%s\n", k, shellescape.Quote(env[k]))
 		}
