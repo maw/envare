@@ -6,7 +6,7 @@
 some or all of their contents to stdout, where they can be easily consumed by
 shell scripts.
 
-## why is it for?
+## why should I use it?
 
 I often want to read from `.env` files from shell scripts.
 
