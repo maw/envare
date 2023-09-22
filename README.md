@@ -6,6 +6,29 @@
 some or all of their contents to stdout, where they can be easily consumed by
 shell scripts.
 
+## usage
+
+### print the value of one environment variable
+
+`envare HELLO`
+
+### print all of the environment in capture-mode
+
+There are three ways to do this:
+
+- `envare` will just print them all
+- `envare ALPHA BETA GAMMA DELTA` will print the values of the given arguments
+  in the order they're given
+
+The `-c` flag puts `envare` in capture-mode, so if you only need to get one in
+capture mode, try:
+
+- `envare -c EPSILON`
+
+`-c` is redundant with more than one argument.  If you're constructing command
+lines dynamically and don't know a priori how many arguments there'll be, just
+use it.
+
 ## why should I use it?
 
 I often want to read from `.env` files from shell scripts.
