@@ -92,5 +92,7 @@ arguments and capture-and-eval its output.
   [shellescape](https://github.com/alessio/shellescape) to do nearly all the
   heavy lifting and maybe you don't trust them or like how they work for some
   reason.
+  - On the other hand, maybe you think [godotenv's command
+    mode](https://github.com/joho/godotenv#command-mode) is better.
 - Maybe it's missing a feature you could use.
 
