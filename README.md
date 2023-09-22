@@ -8,6 +8,9 @@ shell scripts.
 
 ## usage
 
+By default, `envare` reads from the `.env` file in your current working
+directory.
+
 ### print the value of one environment variable
 
 `envare HELLO`
@@ -28,6 +31,11 @@ capture mode, try:
 `-c` is redundant with more than one argument.  If you're constructing command
 lines dynamically and don't know a priori how many arguments there'll be, just
 use it.
+
+### use an `.env` file somewhere else
+
+To use an `.env` that is not in your current working directory, use the `-f`
+flag.  For example: `envare -f ~/work/cool-project/.env DB_PASSWORD`.
 
 ## why should I use it?
 
@@ -84,6 +92,5 @@ arguments and capture-and-eval its output.
   [shellescape](https://github.com/alessio/shellescape) to do nearly all the
   heavy lifting and maybe you don't trust them or like how they work for some
   reason.
-- Maybe it's missing a feature you could use.  (In particular, it'd be nice to
-  teach it to use an arbitrary file instead of whatever's in `$PWD`.)
+- Maybe it's missing a feature you could use.
 

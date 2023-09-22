@@ -9,18 +9,38 @@ import (
 	"os"
 )
 
+func read(path string) map[string]string {
+	var env map[string]string
+
+	if path == "" {
+		env, err := godotenv.Read()
+		if err != nil {
+			log.Fatal("Error loading .env file")
+		}
+
+		return env
+	}
+
+	realPath := path
+	env, err := godotenv.Read(realPath)
+	if err != nil {
+		log.Fatal(fmt.Sprintf("Error loading %s", realPath))
+	}
+
+	return env
+}
+
 func main() {
 	var env map[string]string
 
+	var path string
 	var captureMode bool
 
+	flag.StringVar(&path, "f", "", "path of alternate .env file")
 	flag.BoolVar(&captureMode, "c", false, "run in capture-for-eval mode")
 	flag.Parse()
 
-	env, err := godotenv.Read()
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
+	env = read(path)
 
 	args := flag.Args()
 
