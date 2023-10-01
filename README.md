@@ -9,7 +9,7 @@ shell scripts.
 ## usage
 
 By default, `envare` reads from the `.env` file in your current working
-directory.
+directory and emits what it finds.
 
 ### print the value of one environment variable
 
