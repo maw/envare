@@ -85,8 +85,10 @@ arguments and capture-and-eval its output.
 
 ## why shouldn't I use it?
 
-- It's brand new.  And even after I've used it myself for a while I don't
-  think I'll call it battletested because I hate that term.
+- It's brand new.
+- But even after I've used it myself for a while I don't think I'll call it
+  battletested because I hate that term.  I won't call it a game changer
+  either.
 - There are no tests.
 - It uses [godotenv](https://github.com/joho/godotenv) and
   [shellescape](https://github.com/alessio/shellescape) to do nearly all the
@@ -95,4 +97,5 @@ arguments and capture-and-eval its output.
   - On the other hand, maybe you think [godotenv's command
     mode](https://github.com/joho/godotenv#command-mode) is better.
 - Maybe it's missing a feature you could use.
-
+- No ridiculous logo
+- "`envare`" sounds like the name of a natural gas provider.
