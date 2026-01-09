@@ -72,9 +72,9 @@ With `envare`, though, I can make it generic and less hacky.
 export PGPASSWORD="$(envare DB_PASSWORD)"
 
 psql -P expanded=auto -P null=NULL \
-    -U "$(envare DB_USER) \
+    -U "$(envare DB_USER)" \
     -h "$(envare DB_SERVER)" \
-    "$(envare DB_DATABASE) \
+    "$(envare DB_DATABASE)" \
     "$@"
 ```
 
