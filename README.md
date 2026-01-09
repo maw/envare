@@ -89,7 +89,7 @@ arguments and capture-and-eval its output.
 - But even after I've used it myself for a while I don't think I'll call it
   battletested because I hate that term.  I won't call it a game changer
   either.
-- There are no tests.
+- Maybe you're ok with sourcing `.env` directly, yolo roffle lowell.
 - It uses [godotenv](https://github.com/joho/godotenv) and
   [shellescape](https://github.com/alessio/shellescape) to do nearly all the
   heavy lifting and maybe you don't trust them or like how they work for some
@@ -99,3 +99,8 @@ arguments and capture-and-eval its output.
 - Maybe it's missing a feature you could use.
 - No ridiculous logo
 - "`envare`" sounds like the name of a natural gas provider.
+
+## related software
+
+- [dotenv](https://github.com/gyf304/dotenv)
+- [direnv](https://direnv.net/)
