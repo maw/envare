@@ -98,7 +98,7 @@ arguments and capture-and-eval its output.
     mode](https://github.com/joho/godotenv#command-mode) is better.
 - Maybe it's missing a feature you could use.
 - No ridiculous logo
-- "`envare`" sounds like the name of a natural gas provider.
+- "`envare`" sounds like the name of a natural gas company.
 
 ## related software
 
